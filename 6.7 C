@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+char line[100];
+int answer;
+
+int main (){
+  printf("How can you print a string in C?\n");
+  printf("1 = printf\n"); //Answer one
+  printf("2 = print\n"); //Answer two
+  printf("Enter number: "); //waits for answer
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d", &answer);
+
+  if (answer == 1){
+    printf("Correct! We use printf to print a line.\n"); //If it's 1
+  } else {
+    printf("Incorrect try again.");//If not
+  }
+
+
+  return (0);
+}
