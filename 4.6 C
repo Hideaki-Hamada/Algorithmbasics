@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int note; 
+int note1; 
+
+int main(void) {
+  note = 35*35, //Operation
+  note1 = 10; 
+  printf("%d\n", note+note1); //sum 
+  return 0;
+}
