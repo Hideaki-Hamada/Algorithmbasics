@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+char line[100];
+int hour; 
+int wage=190; 
+
+int main (){
+  printf("Number of hours: ");//Hours that the employee worked
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d", &hour);
+
+  if (hour >= 130){
+    printf("This person is working more than its supose\n");//Employee with 130 hours or more
+    wage = (hour * wage);
+    printf("The wage is: %d\n", wage);//Total wage
+  } else {
+    wage = (hour * wage);
+    printf("The wage is: %d\n", wage);//Total wage
+  }
+  return (0);
+}
