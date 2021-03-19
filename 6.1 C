@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+
+char line[80];
+float point_1; //First point
+float point_2; //Second point
+float result; //Result
+
+int main(void){
+
+  printf("Distance between two points\n");//Presentation
+  
+  printf("First point: ");//First point input
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &point_1);
+
+  printf("Second point: ");//Second point input
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &point_2);
+
+  while (1){//Start While
+
+  result = (point_1*point_1) + (point_2*point_2);//result
+
+  if (result == 0){//if the result is 0...
+    printf("Both numbers are 0, operation cannot be done\n");//Operation cannot be done
+    break; //breaking While
+  } else //Result different to 0
+ 
+  result = sqrt(result); //performs the sqrt 
+
+  printf("Distance is %f\n", result); //Sqrt result
+  break;//breaking cycle
+  }
+
+  return(0);
+}
