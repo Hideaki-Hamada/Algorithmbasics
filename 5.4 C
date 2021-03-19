@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+char line[10];
+float mile; //miles
+float kilometer; //kilometers
+
+int main(void) {
+  printf("Kilometers to Miles converter\n"); //presentation
+  
+  printf("Enter kilometers: "); //Enter the kilometers
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%f", &kilometer);
+
+  printf("You typed %f kilometers per hour\n", kilometer);
+
+  mile = kilometer * 0.6213712; //Operations
+    printf("Converted to miles per hour: %f miles per hour\n", mile); //Results
+
+  return 0;
+}
