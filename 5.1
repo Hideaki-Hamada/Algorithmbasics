@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+char line[100]; //input data
+float temperature; //temperature
+
+int main(void) {
+  printf("Degrees converter \n"); //presentation
+  printf("Enter temperature to convert: \n"); //input temperature
+  
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%f", &temperature); //scan input
+
+  temperature = (9.0/5.0)* temperature + 32; //operations
+
+  printf("cenlsius to farenheit is done %f.\n", temperature); //converted temperature
+
+  return 0;
+}
