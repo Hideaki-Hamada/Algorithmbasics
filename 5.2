@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+char line[10];
+float radius; //radius
+float volume; //volume
+
+int main(void) {
+  printf("Sphere's volume calculation\n"); //introduction
+  printf("Enter radius: "); //input the radius
+  
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%f", &radius);
+
+  volume = (4.0/3.0)* 3.1416 * (radius * radius * radius); //formla for volume
+
+  printf("Your radio is: %f.\n", radius); //reminds the radius
+  printf("The volume is %f\n", volume); //result
+
+  return 0;
+}
