@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int perimeter; 
+int area; 
+
+int main(void) {
+  printf("This rectangle is 5 in of height\n"); //Description of rectangle
+  printf("And 3 for width\n");
+  perimeter = (3*2) + (5*2); //Perimeter operations
+  area = 3*5; // Area operations
+  printf("Area is: %d\n", area); 
+  printf("Perimeter is %d\n", perimeter); 
+  return 0;
+}
