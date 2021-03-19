@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(void) {
+  printf("Name: Fernando\n"); 
+  printf("CURP: CACF010629HYNSNRA7\n"); 
+  printf("Birthday: 29/06/001\n"); 
+  return 0;
+}
