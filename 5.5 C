@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+char line[10];
+int hour; //Hours
+int minute; //Minutes
+
+int main(void) {
+  printf("Enter hour(s): "); //Input hours
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%d", &hour); 
+
+  printf("Enter minute(s): ");//Input minutes
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%d", &minute);
+
+  printf("%d hours %d minutes is: %d minutes\n", hour, minute, hour*60 + minute); //Result and operation
+
+  return 0;
+}
