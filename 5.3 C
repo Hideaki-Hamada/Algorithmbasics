@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+char line[10];
+float width; //width
+float height; //height
+float perimeter; //perimeter
+
+int main(void) {
+  printf("Rectangle's perimeter \n"); //presentation
+
+  printf("Enter width: "); //enter the width
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%f", &width);
+
+  printf("Enter height: "); //enter height
+  fgets(line, sizeof(line),stdin);
+  sscanf(line, "%f", &height); 
+
+  if (width==height){ 
+    printf("This is not a rectanlge\n"); //Stop the program
+  }
+
+  else {//Width and height detection
+    perimeter = 2 * (height + width); //operation
+    printf("Perimeter is: %f\n", perimeter); //result
+
+  }
+  return 0;
+}
