@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+char line[80];
+int grade; //Grades 
+
+int main(void){
+
+  printf("What is the grade of the student?: "); //Input the grade
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d", &grade);
+
+  while (1){
+
+  if (grade <= 60){
+    printf("Grade is F\n"); //Less or equal than 60
+    break;
+  } else if (grade >= 61 && grade <=70){
+    printf("Grade is D\n"); //Less or equal to 70
+    break;
+  } else if (grade >=71 && grade <=80){
+    printf("Grade is C\n"); //Less or equal to 80
+    break;
+  } else if (grade >=81 && grade <=90){
+    printf("Grade is B\n"); //Less or equal to 81 or 90
+    break;
+  } else if (grade >=91 && grade <= 100){
+    printf("Grade is A\n"); //Less or equal to 91 or 100
+    break;
+  } else{"Invalid grade\n"); //Invalid grade
+    break;
+  }
+ }
+
+return(0);
+}
