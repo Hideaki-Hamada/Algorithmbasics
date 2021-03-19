@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+char line[100];
+int year; //Year
+
+int main (){
+  printf("Enter a year: ");//Year input
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%d", &year);
+
+  if (year%400==0){//Division is 0
+    printf("%d = leap year\n", year); //Leap year
+  } else if (year%100==0){//Division is 0
+    printf("%d = not a leap year\n", year);//Not a leap year
+  } else if (year%4==0){//Division is 0
+    printf("%d = leap year\n", year); //Is a leap year
+  } else {
+    printf("%d = no a leap year\n", year); //Is not a leap year
+  }
+return (0);
+}
