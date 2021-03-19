@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int integer; 
+float flt; 
+char charac; 
+
+int main(void){
+  integer = 1; //statement of integer
+  flt = 2.5; // statement of float
+  charac = 'X'; // statement of character
+
+  printf("%f as %%d: %d\n", flt, flt); //Error of %d
+  printf("%d as %%f: %f\n", integer, integer); // Error of %f
+  printf("%c as %%d: %d\n", charac, charac); // Error of %d
+
+  return(0);
+}
