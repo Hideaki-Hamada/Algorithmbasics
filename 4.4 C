@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+  printf("H   H   EEEEE   L      L        OOO\n"); // First line
+  printf("H   H   E       L      L       O   O\n");// Second line
+  printf("H   H   E       L      L       O   O\n");// Third line
+  printf("HHHHH   EEE     L      L       O   O\n");// Fourth line
+  printf("H   H   E       L      L       O   O\n");// Fifth line
+  printf("H   H   E       L      L       O   O\n");// Sixth line
+  printf("H   H   EEEEE   LLLLL  LLLLL    OOO\n");//  Seventh line
+  return 0;
+}
